@@ -43,8 +43,11 @@ function onUpdateIsDone(task) {
     console.log("チェックボックスがクリックされました。", task);
 
     // 達成状態を更新(このままだと、現在の達成状態で更新されてしまう！)
-    const currentValue = task.isDone;
+    a=task.isDone;
     task.isDone = currentValue;
+    currentValue=task.isDone;
+
+
 
     return task;
 }
